@@ -1,0 +1,176 @@
+.header {
+    height: 175px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+    z-index: 1000;
+}
+
+.Header-BG img{
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 90%;
+}
+
+.Header-Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55px;
+}
+
+.Left-Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    left: 0px;
+}
+
+.Website-Logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    object-fit: contain;
+    margin-left: 30px;
+}
+
+.Website-Name {
+    width: 300px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: roborto, arial;
+    color: white;
+    margin-left: 10px;
+}
+
+.Website-Name:hover,
+.Website-Logo:hover {
+    cursor: pointer;
+}
+
+.Right-Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 850px;
+    /* background-color: lightblue; */
+    margin-left: 150px;
+
+}
+
+.Right-Section div{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: roborto, arial;
+    color: white;
+    transition: all 0.25s ease;
+    text-align: center;
+}
+
+.Right-Section div:hover {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.a {
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .header {
+        height: 305px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .Header-BG img {
+        height: 305px;
+        object-fit: none;
+    }
+
+    .Header-Content {
+        flex-direction: column;
+        top: 35px;
+    }
+
+    .Left-Section {
+        flex-direction: column;
+        width: 100%;
+        left: 0px;
+    }
+
+    .Website-Logo img {
+        width: 85px;
+        height: 85px;
+        border-radius: 50px;
+        object-fit: contain;
+        margin-left: 0px;
+        margin-bottom: 5px;
+
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .Website-Name {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        font-size: 35px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .Right-Section {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0px;
+
+        text-align: center;
+        justify-items: center;
+    }
+
+    .Right-Section div {
+        font-size: 20px;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .Right-Section div:hover {
+        font-size: 22px;
+    }
+}

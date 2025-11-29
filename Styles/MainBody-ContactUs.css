@@ -1,0 +1,217 @@
+.Main-Section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.contact-heading1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-subtext {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgb(155, 79, 150);
+}
+
+.ContactMe-MainBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.QSA-profile-box {
+    width: 600px;
+    /* background-color: lightblue; */
+}
+
+.QSA-profile {
+    height: 400px;
+    border-radius: 150px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.contact-me-form {
+    width: 600px;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-last-name-row,
+.contact-subject-row,
+.message-submit-row {
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    /* border-style: solid; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.first-last-name-row div,
+.contact-subject-row div,
+.message-submit-row div {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.first-last-name-row input,
+.contact-subject-row input,
+.message-submit-row textarea {
+    width: 235px;
+    height: 35px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(245, 245, 245);
+    font-size: 14px;
+    padding-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.message-submit-row div {
+    margin-top: 25px;
+}
+
+.message-submit-row textarea {
+    width: 494px;
+    height: 100px;
+    vertical-align: top;
+    text-align: left;
+    resize: none;
+    padding-top: 5px;
+}
+
+.first-last-name-row input:hover,
+.contact-subject-row input:hover,
+.message-submit-row textarea:hover {
+    border-width: 2px;
+}
+
+.submit-button {
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.25s ease;
+    background-color: lightgray;
+}
+
+.submit-button:hover {
+    background-color: rgb(123, 123, 123);
+    width: 160px;
+    color: white;
+}
+
+.Main-Section {
+    animation: fade-in-translate 1s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fade-in-translate {
+    from {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .Main-Section {
+        margin-top: 40px;
+    }
+
+    .contact-heading1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .ContactMe-MainBox {
+        flex-direction: column;
+    }
+
+    .QSA-profile-box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .QSA-profile {
+        height: 255px;
+    }
+
+    .contact-me-form {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .first-last-name-row,
+    .contact-subject-row,
+    .message-submit-row {
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+
+    .first-last-name-row input,
+    .contact-subject-row input,
+    .message-submit-row textarea {
+        width: 300px;
+    }
+
+    .message-submit-row div {
+        margin-top: 0px;
+    }
+
+    .message-submit-row textarea {
+        width: 300px;
+    }
+
+    .submit-button {
+        margin-top: 10px;
+    }
+}

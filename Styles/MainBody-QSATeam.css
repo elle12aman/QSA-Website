@@ -1,0 +1,143 @@
+.Main-Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Heading1 {
+    background-image: url("../Images/QSATeam/MeetTheTeam_BG.png");
+    background-position: 50% 15%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1400px;
+    height: 400px;
+    opacity: 80%;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+.Bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    width: 1300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Name-Title {
+    font-size: 40px;
+    font-weight: 600;
+    width: 800px;
+}
+
+.Title-left {
+    margin-right: 70px;
+}
+
+.Image-left {
+    margin-right: 70px;
+}
+
+.Image img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 150px;
+}
+
+.Content {
+    margin-top: 20px;
+    width: 1200px;
+    font-size: 22px;
+    text-align:justify;
+}
+
+.Bio {
+    animation: fade-in-translate 1s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fade-in-translate {
+    from {
+        opacity: 0%;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .Heading1 {
+        background-size: 140%;
+        width: 100%;
+        height: 300px;
+        font-size: 50px;
+    }
+
+    .Bio {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Name-Title {
+        font-size: 25px;
+        width: 100%;
+    }
+    
+    .Title-left {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .Image-left {
+        margin-right: 0px;
+    }
+
+    .Image img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .Content {
+        margin: 20px 0px 0px 0px;
+        width: 95%;
+        font-size: 20px;
+    }
+}
