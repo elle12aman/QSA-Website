@@ -106,10 +106,16 @@ a[href^=tel] {
 
     .Resource-Content {
         text-align: left;
-        width: 95%;
+        max-width: 100%;
     }
 
     .content {
-        width: 90%;
+        max-width: 100%;
+    }
+
+    ul li {
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
