@@ -72,8 +72,11 @@ ul li {
     }
 }
 
-
-
+a[href^=tel] {
+    color: #000000 !important;
+    /* Or your desired color */
+    text-decoration: none;
+}
 
 
 
