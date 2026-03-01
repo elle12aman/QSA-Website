@@ -61,9 +61,10 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    width: 850px;
+    width: 900px;
     /* background-color: lightblue; */
-    margin-left: 150px;
+    margin-left: 100px;
+    gap: 20px
 
 }
 
@@ -111,14 +112,14 @@ a:visited {
 
 @media (max-width: 600px) {
     .header {
-        height: 305px;
+        height: 345px;
         margin-top: 0px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
     .Header-BG img {
-        height: 305px;
+        height: 345px;
         object-fit: none;
     }
 
@@ -171,6 +172,6 @@ a:visited {
     }
 
     .Right-Section div:hover {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
